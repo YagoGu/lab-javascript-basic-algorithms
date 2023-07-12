@@ -29,7 +29,13 @@ while (i < hacker1.length) {
 console.log(newHacker1);
 
 //Loops 2
-console.log(hacker1.split("").reverse().join(" "));
+let newHacker2 = "";
+let x = hacker2.length-1;
+while (x >= 0) {
+    newHacker2 += hacker2[x];
+    x--
+}
+console.log(newHacker2);
 
 //Loops 3
 let hackers = [hacker1, hacker2];
