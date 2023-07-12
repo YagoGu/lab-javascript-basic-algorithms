@@ -64,3 +64,27 @@ console.log(`On the text:
     -The word "et" is repeating itself ${etWords} times.`);
 
 //Bonus 2
+
+let palindrome = `"Was it a car or a cat I saw?`;
+let newPalindrome = "";
+let reversedPalindrome = "";
+
+for (let l = 0; l < palindrome.length ; l++) {
+    if (palindrome[l]!="!" && palindrome[l]!=" " && palindrome[l]!='"' && palindrome[l]!=',' && palindrome[l]!="'" && palindrome[l]!="?"){
+        newPalindrome += palindrome[l].toLowerCase();
+    }
+}
+
+for (let l = palindrome.length-1; l >= 0 ; l--) {
+    if (palindrome[l]!="!" && palindrome[l]!=" " && palindrome[l]!='"' && palindrome[l]!=',' && palindrome[l]!="'" && palindrome[l]!="?"){
+        reversedPalindrome += palindrome[l].toLowerCase();
+    }
+}
+
+if (newPalindrome == reversedPalindrome) {
+    console.log(`The word or sentece "${palindrome}" it's a palindrome.`)
+}
+
+else {
+    console.log(`The word or sentece "${palindrome}" it isn't a palindrome.`)
+}
